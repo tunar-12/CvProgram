@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="380.0" styleClass="backGround" stylesheets="@../css/designer.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxml.FXMLController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="62.0" prefWidth="279.0" style="-fx-border-color: black; -fx-border-width: 3;" text="CV Launcher" textFill="#2e9000">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="14.0" layoutY="85.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Name" textFill="#20cd01" />
+      <TextField fx:id="nameTxt" layoutX="93.0" layoutY="85.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your name" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="surLabel" alignment="CENTER" layoutX="14.0" layoutY="127.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Surname" textFill="#20cd01" />
+      <TextField fx:id="surnameTxt" layoutX="93.0" layoutY="127.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your surname" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="170.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Father name" textFill="#20cd01">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fatherTxt" layoutX="93.0" layoutY="170.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your father's name" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="214.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Adress" textFill="#20cd01" />
+      <TextField fx:id="adressTxt" layoutX="93.0" layoutY="214.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your address" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="253.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Date Birth" textFill="#20cd01" />
+      <DatePicker fx:id="dateTxt" layoutX="93.0" layoutY="253.0" prefHeight="32.0" prefWidth="264.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="293.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Number" textFill="#20cd01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberTxt" layoutX="93.0" layoutY="293.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your phone number" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="333.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Mail" textFill="#20cd01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mailTxt" layoutX="93.0" layoutY="333.0" prefHeight="32.0" prefWidth="264.0" promptText="Enter your mail" style="-fx-border-color: black; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="372.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Gender" textFill="#20cd01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="maleTickTxt" layoutX="107.0" layoutY="372.0" mnemonicParsing="false" onAction="#malePr" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: light;" text="Male" textFill="#098300">
+         <toggleGroup>
+            <ToggleGroup fx:id="tunar" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="feTick" layoutX="218.0" layoutY="372.0" mnemonicParsing="false" onAction="#femalePr" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: light;" text="Female" textFill="#0f8000" toggleGroup="$tunar" />
+      <ComboBox fx:id="language" layoutX="93.0" layoutY="411.0" prefHeight="32.0" prefWidth="264.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="411.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Language " textFill="#20cd01">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="450.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Abilities" textFill="#20cd01" />
+      <CheckBox fx:id="eeTick" layoutX="93.0" layoutY="456.0" mnemonicParsing="false" onAction="#eePr" prefHeight="21.0" prefWidth="60.0" text="Java EE" textFill="#048000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="seTick" layoutX="160.0" layoutY="456.0" mnemonicParsing="false" onAction="#sePr" prefHeight="21.0" prefWidth="60.0" text="Java SE" textFill="#048000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fxTick" layoutX="225.0" layoutY="456.0" mnemonicParsing="false" onAction="#fxPr" prefHeight="21.0" prefWidth="60.0" text="Java FX" textFill="#048000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="pyTick" layoutX="297.0" layoutY="456.0" mnemonicParsing="false" onAction="#pyPr" prefHeight="21.0" prefWidth="60.0" text="Python" textFill="#048000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </CheckBox>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="492.0" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Nationality" textFill="#20cd01">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="nationality" layoutX="93.0" layoutY="492.0" prefHeight="32.0" prefWidth="264.0" />
+      <Button fx:id="cancel" layoutX="15.0" layoutY="538.0" mnemonicParsing="false" onAction="#cancelPr" prefHeight="50.0" prefWidth="157.0" style="-fx-border-color: black; -fx-border-width: 3;" text="Cancel" textFill="#1b7500">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="190.0" layoutY="538.0" mnemonicParsing="false" onAction="#savePr" prefHeight="50.0" prefWidth="157.0" style="-fx-border-color: black; -fx-border-width: 3;" text="Save" textFill="#1b7500">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

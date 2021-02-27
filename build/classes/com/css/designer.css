@@ -1,0 +1,5 @@
+.backGround{
+    -fx-background-image: url(/com/icon/back.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 300%;
+}
